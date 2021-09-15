@@ -288,7 +288,7 @@ considere necesarios.
 * `.gitignore` para ignorar `node_modules` u otras carpetas que no deban
   incluirse en control de versiones (`git`).
 * `test/md-links.spec.js` debe contener los tests unitarios para la función
-  `mdLinks()`. Tu inplementación debe pasar estos tets.
+  `mdLinks()`. Tu implementación debe pasar estos tets.
 
 ## Este proyecto consta de DOS partes
 
