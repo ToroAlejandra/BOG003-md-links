@@ -1,0 +1,22 @@
+const fs = require('fs');
+const path = require('path')
+
+const pathsToCheck = ['./BOG003-md-links', './BOG003-md-links/index.js'];
+
+const absolutePath = (inputPath) => { // if path is relative this functions convert this to absolute
+  let resolvePath = inputPath;
+  if(!path.isAbsolute(inputPath)){
+    resolvePath = path.resolve(inputPath)
+  }
+  return resolvePath;
+};
+
+fs.stat(abPath(pathsToCheck[0]), function (err, stats) => {
+  if(err) return console.error(err)
+ console.log(stats)
+});
+
+/*module.exports = (path, options) => {
+  console.log('Hola');
+};
+*/
